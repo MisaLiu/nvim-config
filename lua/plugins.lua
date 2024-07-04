@@ -108,7 +108,7 @@ require("lazy").setup({
   {
     'lukas-reineke/indent-blankline.nvim',
     main = 'ibl',
-    event = 'UIEnter',
+    event = 'BufNew',
     config = function ()
       require('config.indent-blankline')
     end,
@@ -130,13 +130,14 @@ require("lazy").setup({
     'akinsho/bufferline.nvim',
     version = "*",
     dependencies = 'nvim-tree/nvim-web-devicons',
-    event = 'UIEnter',
+    event = 'VeryLazy',
     config = function()
       require('config.bufferline')
     end,
   },
   {
     'tiagovla/scope.nvim',
+    event = 'VeryLazy',
     config = function ()
       require('config.scope')
     end,
@@ -148,7 +149,7 @@ require("lazy").setup({
       'nvim-tree/nvim-web-devicons',
       'arkav/lualine-lsp-progress',
     },
-    event = 'UIEnter',
+    event = 'VeryLazy',
     config = function()
       require('config.lualine')
     end,
