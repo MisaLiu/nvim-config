@@ -201,6 +201,16 @@ require("lazy").setup({
       require('config.gitsigns')
     end,
   },
+  -- Code::Stats
+  {
+    'YannickFricke/codestats.nvim',
+    dependencies = {
+      'nvim-lua/plenary.nvim',
+    },
+    config = function ()
+      require('config.codestats-nvim')
+    end,
+  },
   -- automatically check for plugin updates
   -- checker = { enabled = true },
 })
