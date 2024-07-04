@@ -56,6 +56,18 @@ require("lazy").setup({
     "L3MON4D3/LuaSnip",
     version = "v2.*",
   },
+  -- DAP manager
+  {
+    'rcarriga/nvim-dap-ui',
+    dependencies = {
+      'nvim-neotest/nvim-nio',
+      'jay-babu/mason-nvim-dap.nvim',
+      'mfussenegger/nvim-dap',
+    },
+    config = function ()
+      require('config.dapui')
+    end,
+  },
   -- Auto pairing
   {
     'windwp/nvim-autopairs',
