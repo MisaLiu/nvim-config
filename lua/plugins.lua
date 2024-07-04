@@ -14,6 +14,10 @@ vim.g.maplocalleader = "\\"
 
 -- Setup lazy.nvim
 require("lazy").setup({
+  -- lazy.nvim configs
+  checker = {
+    enabled = true,
+  },
   -- Color scheme
   {
     'tanvirtin/monokai.nvim',
