@@ -207,6 +207,7 @@ require("lazy").setup({
     dependencies = {
       'nvim-lua/plenary.nvim',
     },
+    event = 'VeryLazy',
     config = function ()
       require('config.codestats-nvim')
     end,
