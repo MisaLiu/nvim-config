@@ -119,6 +119,13 @@ require("lazy").setup({
       require('config.bufferline')
     end,
   },
+  {
+    'tiagovla/scope.nvim',
+    event = 'UIEnter',
+    config = function ()
+      require('config.scope')
+    end,
+  },
   -- Statusline manager
   {
     'nvim-lualine/lualine.nvim',
@@ -171,6 +178,9 @@ require("lazy").setup({
     dependencies = {
       'nvim-lua/plenary.nvim'
     },
+    config = function ()
+      require('config.telescope')
+    end,
   },
   -- Git status bar
   {
