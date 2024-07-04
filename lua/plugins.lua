@@ -121,7 +121,6 @@ require("lazy").setup({
   },
   {
     'tiagovla/scope.nvim',
-    event = 'UIEnter',
     config = function ()
       require('config.scope')
     end,
