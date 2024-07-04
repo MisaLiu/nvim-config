@@ -205,6 +205,15 @@ require("lazy").setup({
       require('config.gitsigns')
     end,
   },
+  -- Startup screen
+  {
+    'nvimdev/dashboard-nvim',
+    dependencies = { 'nvim-tree/nvim-web-devicons' },
+    event = 'VimEnter',
+    config = function ()
+      require('config.dashboard')
+    end,
+  },
   -- Code::Stats
   {
     'YannickFricke/codestats.nvim',

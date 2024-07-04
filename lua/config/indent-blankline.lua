@@ -12,4 +12,18 @@ ibl.setup({
     enabled = true,
     show_exact_scope = true,
   },
+  exclude = {
+    filetypes = {
+      'lspinfo',
+      'lazy',
+      'mason',
+      'checkhealth',
+      'help',
+      'man',
+      'gitcommit',
+      'TelescopePrompt',
+      'TelescopeResults',
+      'dashboard',
+    },
+  },
 })
