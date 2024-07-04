@@ -214,6 +214,14 @@ require("lazy").setup({
       require('config.dashboard')
     end,
   },
+  -- Highlight current window
+  {
+    'nvim-zh/colorful-winsep.nvim',
+    event = { 'WinNew' },
+    config = function ()
+      require('config.colorful-winsep')
+    end,
+  },
   -- Code::Stats
   {
     'YannickFricke/codestats.nvim',
