@@ -215,6 +215,7 @@ require("lazy").setup({
       require('config.gitsigns')
     end,
   },
+  -- In-editor ternimal
   -- Startup screen
   {
     'nvimdev/dashboard-nvim',
