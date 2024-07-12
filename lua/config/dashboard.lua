@@ -4,7 +4,7 @@ local dashboard = require('dashboard')
 dashboard.setup({
   hide = {
     statusline = false,
-    tabline = true,
+    tabline = false,
     winbar = true,
   },
 })

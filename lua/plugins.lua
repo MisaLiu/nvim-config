@@ -116,6 +116,7 @@ require("lazy").setup({
   -- Breadcrumb for coding
   {
     'Bekaboo/dropbar.nvim',
+    event = 'BufNew',
   },
   -- Display buffer context
   {
@@ -130,7 +131,7 @@ require("lazy").setup({
     'akinsho/bufferline.nvim',
     version = "*",
     dependencies = 'nvim-tree/nvim-web-devicons',
-    event = 'VeryLazy',
+    event = 'UIEnter',
     config = function()
       require('config.bufferline')
     end,
