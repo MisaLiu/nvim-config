@@ -30,4 +30,4 @@ neotree.setup({
   },
 })
 
-vim.cmd([[nnoremap \ :Neotree reveal<cr>]])
+vim.cmd([[nnoremap <silent>\ :Neotree reveal<cr>]])
