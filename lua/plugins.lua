@@ -216,6 +216,14 @@ require("lazy").setup({
     end,
   },
   -- In-editor ternimal
+  {
+    'akinsho/toggleterm.nvim',
+    version = '*',
+    event = 'VeryLazy',
+    config = function ()
+      require('config.toggleterm')
+    end
+  },
   -- Startup screen
   {
     'nvimdev/dashboard-nvim',
