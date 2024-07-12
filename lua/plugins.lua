@@ -126,6 +126,15 @@ require("lazy").setup({
       require('config.nvim-treesitter-context')
     end,
   },
+  -- Display LSP server progress
+  {
+    'j-hui/fidget.nvim',
+    event = 'UIEnter',
+    init = false,
+    config = function ()
+      require('config.fidget')
+    end,
+  },
   -- Tabline manager
   {
     'akinsho/bufferline.nvim',
@@ -148,7 +157,6 @@ require("lazy").setup({
     'nvim-lualine/lualine.nvim',
     dependencies = {
       'nvim-tree/nvim-web-devicons',
-      'arkav/lualine-lsp-progress',
     },
     event = 'VeryLazy',
     config = function()
