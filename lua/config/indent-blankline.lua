@@ -50,6 +50,7 @@ ibl.setup({
       'TelescopePrompt',
       'TelescopeResults',
       'dashboard',
+      'toggleterm',
     },
   },
 })
