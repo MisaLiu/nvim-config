@@ -1,6 +1,10 @@
 
 -- Setup Java LSP
-require('java').setup()
+require('java').setup({
+  jdk = {
+    auto_install = false,
+  },
+})
 
 require('mason-lspconfig').setup({
   -- A list of servers to automatically install if they're not already installed
