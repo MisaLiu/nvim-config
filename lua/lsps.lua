@@ -63,6 +63,11 @@ lspconfig.tsserver.setup({
   capabilites = capabilities,
 })
 
+lspconfig.jdtls.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+})
+
 -- This is an interesting one, for some reason these two LSPs (CSS/HTML) need to
 -- be activated separately outside of the above loop. If someone can tell me why,
 -- send me a note...
