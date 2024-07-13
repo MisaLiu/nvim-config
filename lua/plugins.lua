@@ -28,13 +28,21 @@ require("lazy").setup({
   -- Dev tools manager
   {
     'williamboman/mason.nvim',
-    config = function()
-      require('config.mason')
-    end,
+    opts = {
+      ui = {
+        icons = {
+          package_installed = "✓",
+          package_pending = "➜",
+          package_uninstalled = "✗"
+        },
+      },
+    },
   },
   -- LSP manager
   'williamboman/mason-lspconfig.nvim',
   'neovim/nvim-lspconfig',
+  -- Java LSP
+  'nvim-java/nvim-java',
   -- Vscode-like pictograms
   {
     "onsails/lspkind.nvim",
