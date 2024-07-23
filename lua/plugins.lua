@@ -260,6 +260,11 @@ require("lazy").setup({
       require('config.codestats-nvim')
     end,
   },
+  -- WakaTime
+  {
+    'wakatime/vim-wakatime',
+    lazy = false,
+  },
   -- automatically check for plugin updates
   -- checker = { enabled = true },
 })
